@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# https://github.com/Nyr/openvpn-install
+# https://github.com/PhoenixxZ2023/openvpn-install
 #
 # Copyright (c) 2013 Nyr. Released under the MIT License.
 
@@ -164,8 +164,8 @@ if [[ ! -e /etc/openvpn/server/server.conf ]]; then
 	fi
 	echo
 	echo "Which protocol should OpenVPN use?"
-	echo "   1) UDP (recommended)"
-	echo "   2) TCP"
+	echo "   1) UDP"
+	echo "   2) TCP (recomendado)"
 	read -p "Protocol [1]: " protocol
 	until [[ -z "$protocol" || "$protocol" =~ ^[12]$ ]]; do
 		echo "$protocol: invalid selection."
